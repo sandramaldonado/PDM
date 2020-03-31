@@ -12,6 +12,11 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
+    {
+      title: 'home',
+      url: '/home',
+      icon: 'warning'
+    },
   
     {
       title: 'Login',
@@ -27,12 +32,6 @@ export class AppComponent implements OnInit {
     {
       title: 'registrarse',
       url: '/registrarse',
-      icon: 'warning'
-    },
-
-    {
-      title: 'home',
-      url: '/home',
       icon: 'warning'
     },
 

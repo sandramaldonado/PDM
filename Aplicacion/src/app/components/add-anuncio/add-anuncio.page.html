@@ -8,5 +8,82 @@
 </ion-header>
 
 <ion-content>
+  <img src="https://image.freepik.com/foto-gratis/mano-mujer-escribiendo-libreta-espiral-vacia-pluma-banner-web_35708-759.jpg">
+
+  <div class="card mt-5" id="agregar">
+    <div class="card-body">
+        <form #productForm="ngForm" (ngSubmit)="onSubmit(productForm)">
+            <!-- TO UPDATE -->
+            <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="anuncioService.selectedAnuncio.$key">
+            
+            <div class="form-group">
+              <ion-label position="floating">Agregar una Imagen:</ion-label>
+              <ion-input 
+                type="text"
+                class="form-control"
+                name="imagen"
+                #imagen="ngModel"
+                [(ngModel)]="anuncioService.selectedAnuncio.imagen"
+                placeholder="Add A Image"
+                ></ion-input>
+            </div>
+  
+            <div class="form-group">
+              <ion-label position="floating">Agregar un Titulo:</ion-label>
+              <ion-input 
+                type="text"
+                class="form-control"
+                name="titulo"
+                #titulo="ngModel"
+                [(ngModel)]="anuncioService.selectedAnuncio.titulo"
+                placeholder="Add A Title"
+                ></ion-input>
+            </div>
+            <div class="form-group">
+              <ion-label position="floating">Agregar una Categoria:</ion-label>
+                <ion-input 
+                  type="text"
+                  class="form-control"
+                  name="categoria"
+                  #categoria="ngModel"
+                  [(ngModel)]="anuncioService.selectedAnuncio.categoria"
+                  placeholder="Add A Category"
+                  ></ion-input>
+              </div>
+  
+            <div class="form-group">
+              <ion-label position="floating">Añadir una Descripcion:</ion-label>
+              <ion-input
+                type="text"
+                class="form-control"
+                name="descripcion"
+                #descripcion="ngModel"
+                [(ngModel)]="anuncioService.selectedAnuncio.descripcion"
+                placeholder="Add A Descripcion"
+                ></ion-input>
+            </div>
+  
+            <div class="form-group">
+              <ion-label position="floating">Añadir un numero de referencia:</ion-label>
+              <ion-input 
+                type="text"
+                class="form-control"
+                name="telefono"
+                #telefono="ngModel"
+                [(ngModel)]="anuncioService.selectedAnuncio.telefono"
+                placeholder="Add A Number"
+                ></ion-input>
+            </div>
+  
+  
+            <div class="form-group">
+              <ion-button expand="block" class="btn btn-primary" type="submit">
+                  <i class="fas fa-plus-circle"></i> Añadir Anuncio
+              </ion-button>
+              
+            </div>
+          </form>
+    </div>
+  </div>
 
 </ion-content>

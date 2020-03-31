@@ -8,7 +8,14 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-item>
+    <ion-label>Seleccione Categoria:</ion-label>
+    <ion-select value="12">
+      <ion-select-option value="01">Empleos</ion-select-option>
+      <ion-select-option value="02">Donaciones</ion-select-option>
+      
+    </ion-select>
+  </ion-item>
   <div *ngFor="let anuncio of anuncioList">
     <ion-card>
       <img class="imgAnuncio"src="{{anuncio.imagen}}" />
@@ -19,6 +26,7 @@
       <ion-card-content>
         {{anuncio.descripcion}}
       </ion-card-content>
+      <ion-button size="small">Leer Mas</ion-button>
     </ion-card>
   </div>
   
