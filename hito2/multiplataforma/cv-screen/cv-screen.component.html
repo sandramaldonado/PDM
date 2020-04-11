@@ -1,0 +1,21 @@
+<app-cv-logo link= "https://www.cdc.gov/coronavirus/2019-ncov/images/2019-coronavirus.png"></app-cv-logo>
+<app-cvciudad title="cochabamba"></app-cvciudad>
+<app-cvciudad title="santa Cruz"></app-cvciudad>
+<app-cvciudad title="Oruro"></app-cvciudad>
+<input 
+class="buscar"
+type="text"  
+name= "buscar" 
+[(ngModel)]= "buscar" 
+class="alineamiento" 
+placeholder="Ingrese Busqueda">
+
+<ion-row style="text-align: center;">
+  
+  <ion-col>
+    
+  </ion-col>
+  <ion-col>
+    <ion-button expand="block" (click)="calcularMayor()">Calcular</ion-button>
+  </ion-col>
+</ion-row>
