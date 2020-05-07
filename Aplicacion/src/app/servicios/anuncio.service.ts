@@ -1,10 +1,14 @@
 import { Injectable } from '@angular/core';
-import{AngularFireDatabase, AngularFireList} from 'angularfire2/database';
+import{AngularFireDatabase, AngularFireList,} from 'angularfire2/database';
+import { of } from 'rxjs';
+import { Observable } from 'rxjs';
+
 import {Anuncio} from '../Modelos/Anuncio';
 @Injectable({
   providedIn: 'root'
 })
 export class AnuncioService {
+  anuncio: Observable<any[]>;
   anunciosList: AngularFireList<any>;
   selectedAnuncio: Anuncio = new Anuncio();
   
@@ -13,6 +17,7 @@ export class AnuncioService {
   getAnuncios(){
     return this.anunciosList = this.firebase.list('anuncios');
   }
+ 
 
   insertAnuncio(anuncio: Anuncio){
     this.anunciosList.push({
@@ -37,5 +42,11 @@ export class AnuncioService {
   deleteAnuncio($key: string){
     this.anunciosList.remove($key);
 
+  }
+
+  getAnuncioFiltro(filtro: string): Observable<any> {
+    this.anunciosList = this.firebase.list('/anuncios', ref => 
+    ref.orderByChild('categoria').equalTo(filtro))
+    return of(this.anunciosList);
   }
 }

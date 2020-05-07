@@ -8,11 +8,44 @@
              WILL</ion-list-header>
           <ion-note >Tu Determinacion es tu Capacidad</ion-note>
 
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
-            <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" [class.selected]="selectedIndex == i">
-              <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
-              <ion-label>{{ p.title }}</ion-label>
+          <ion-menu-toggle auto-hide="false" >
+
+            <ion-item [routerDirection]="'root'" routerLink="/hito3">
+              <ion-label>
+                Hito3
+              </ion-label>
             </ion-item>
+
+            <ion-item [routerDirection]="'root'" routerLink="/home">
+              <ion-label>
+                Home
+              </ion-label>
+            </ion-item>
+
+            <ion-item  routerLink="/clasificados">
+              <ion-label>
+                Noticias
+              </ion-label>
+            </ion-item>
+
+            <ion-item *ngIf=" Tipo_usuario === 'publico' " routerLink="/add-anuncio">
+              <ion-label>
+                Añadir Anuncio
+              </ion-label>
+            </ion-item>
+
+            <ion-item *ngIf="isLogged !==true" routerLink="/log">
+              <ion-label>
+                Iniciar Sesion
+              </ion-label>
+            </ion-item>
+            <ion-item  *ngIf=" Tipo_usuario === 'publico'" href="/log">
+              <ion-label>
+                Cerrar Sesion
+              </ion-label>
+            </ion-item>
+            
+            
           </ion-menu-toggle>
         </ion-list>
 

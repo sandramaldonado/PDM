@@ -1,9 +1,23 @@
 ion-item{
-    --background: #BE243C;
-    --color: #fff;
+    --background: #fff;
+    --color: #8C243C;
     border-radius: 10px;
+    margin-left: 10px;
+    
 }
-
+.username{
+    margin-top: 40%;
+    margin-left: 20%;
+    margin-right: -20%;
+}
+.pass{
+    margin-top: 5%;
+}
+.boton{
+    margin-top: 40%;
+    margin-left: 20%;
+    margin-right: -20%;
+}
 ion-button{
     --background: #8C243C;
 }
@@ -15,4 +29,7 @@ ion-button{
 
 ion-header{
     background-color: #8C243C;
+}
+ion-content{
+    margin-top: 40%;
 }

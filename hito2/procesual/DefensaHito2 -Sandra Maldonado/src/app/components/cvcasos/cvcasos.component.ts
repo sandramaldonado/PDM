@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CvcasosComponent implements OnInit {
 
-  @Input('departament') departament:string;
+  @Input('title') departament:string;
   constructor() { }
 
   ngOnInit() {}

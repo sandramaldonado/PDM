@@ -1,4 +1,25 @@
+@font-face {
+  font-family: Eurostile-LT-Std-Demi-Oblique;
+  src: url('../fonts/Eurostile/Eurostile-LT-Std-Demi-Oblique_16309.ttf'); 
+}
+
+@font-face {
+  font-family: EurostileLTStd;
+  src: url('../fonts/Eurostile/EurostileLTStd.otf'); 
+}
+
+@font-face {
+  font-family: Eurostile-LT-Std-Oblique;
+  src: url('../fonts/Eurostile/Eurostile-LT-Std-Oblique_16312.ttf'); 
+}
+
+@font-face {
+  font-family: EurostileLTStd-BoldOblique;
+  src: url('../fonts/Eurostile/EurostileLTStd-BoldOblique.otf'); 
+}
+
 ion-menu ion-content {
+  font-family: EurostileLTStd-BoldOblique;
   --background: var(--ion-item-background, var(--ion-background-color, #fff));
 }
 
@@ -10,6 +31,7 @@ ion-menu.md ion-content {
 }
 
 ion-menu.md ion-list {
+  font-family: EurostileLTStd-BoldOblique;
   padding: 20px 0;
 }
 
@@ -133,4 +155,12 @@ ion-note{
   border-radius: 50%;
   width: 50px;
   height: 50px;
+}
+ion-label{
+  margin-left: 30%;
+  font-family: EurostileLTStd-BoldOblique;
+  font-size: large;
+}
+main .inner-scroll{
+  padding: 0px;
 }

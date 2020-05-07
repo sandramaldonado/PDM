@@ -1,0 +1,54 @@
+<ion-content>
+  <ion-app>
+    <ion-content fullscreen class="ion-padding" scroll-y="false">
+      <ion-slides #slides>
+
+        <ion-slide>
+          <div class="slide">
+            <app-pdm></app-pdm>
+          </div>
+          <button type="submit" float-left ion-button  color="primary" class="btnPrev" (click)="prev()">Prev</button>
+          <button type="submit" float-right ion-button color="primary" class="btnNext" (click)="next()">Next</button>
+        </ion-slide>
+
+        <ion-slide>
+          <div class="slide">
+            <app-defensahito3></app-defensahito3>
+          </div>
+          <button type="submit" float-left ion-button  color="primary" class="btnPrev" (click)="prev()">Prev</button>
+          <button type="submit" float-right ion-button color="primary" class="btnNext" (click)="next()">Next</button>
+        </ion-slide>
+
+        <ion-slide>
+          <div class="slide">
+            <app-firebase></app-firebase>
+          </div>
+         
+          <button type="submit" float-left ion-button  color="primary" class="btnPrev" (click)="prev()">Prev</button>
+          <button type="submit" float-right ion-button color="primary" class="btnNext" (click)="next()">Next</button>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-header [translucent]="true">
+            <ion-toolbar>
+              <button type="submit" float-left ion-button  color="primary" class="btnPrev" (click)="prev()">Prev</button>
+              <ion-title>
+                LOGIN FORM APP
+              </ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <div class="slide">
+            <app-login></app-login>
+            
+          </div>
+        </ion-slide>
+
+        
+
+      </ion-slides>
+
+      
+         
+    </ion-content>
+  </ion-app>
+</ion-content>

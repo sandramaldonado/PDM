@@ -11,6 +11,8 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 })
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
+  public isLogged :boolean = false;
+  public Tipo_usuario: String;
   public appPages = [
     {
       title: 'home',
@@ -66,5 +68,12 @@ export class AppComponent implements OnInit {
     if (path !== undefined) {
       this.selectedIndex = this.appPages.findIndex(page => page.title.toLowerCase() === path.toLowerCase());
     }
+  }
+
+  TipoUsuario(tipo: string){
+    console.log("tipo:" + tipo); 
+    this.isLogged = true;
+    this.Tipo_usuario = tipo;
+    console.log("tipito:" + this.Tipo_usuario);
   }
 }

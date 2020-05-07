@@ -1,0 +1,41 @@
+<ion-header  style="background-color: #428AF8;">
+ 
+    <div class="up">
+      <app-button-prev class="flecha"title="login"></app-button-prev>
+      <ion-title >
+        
+        Login Form APP
+      </ion-title>
+    </div>
+    
+</ion-header>
+<ion-content>
+  <form   class="fondo" style="position: absolute; z-index: 1;">
+    <img class="logo"src="../../../../assets/log.png">
+    <div class="texto">
+      <ion-item class="pass">
+
+        <ion-input   name="username"
+         [(ngModel)]= "username"
+            type="email"
+             placeholder="Username"
+              ></ion-input>
+      </ion-item>
+        
+  
+      <ion-item class="pass">
+        <ion-input
+          name="password"
+            [(ngModel)]= "password"
+              type="password"
+              placeholder="Password" ></ion-input>
+      </ion-item>
+    </div>
+
+    <div padding class="boton" >
+      <ion-button  size="medium" (click)="login()"  expand="block" >Log In</ion-button>
+
+    </div>
+   
+  </form>
+</ion-content>
