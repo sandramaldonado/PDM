@@ -1,7 +1,0 @@
-{
-  "name": "Hito3",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
