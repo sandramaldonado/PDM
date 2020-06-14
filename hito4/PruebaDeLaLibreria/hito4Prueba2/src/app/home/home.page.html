@@ -1,0 +1,76 @@
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slides</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@next/css/ionic.bundle.css"/>
+ 
+</head>
+<body>
+  <ion-app>
+    <ion-content fullscreen class="ion-padding" scroll-y="false">
+      <ion-slides>
+
+        <ion-slide style="background-color: #4DCA77;">
+          <div class="slide">
+            <div class="cont">
+              <h1 >PDM</h1>
+              <p>Creacion Ionic Angular Package</p>
+            </div>
+            <div class="left">
+              <button 
+              id= {{title}} 
+              type="submit" 
+              float-left ion-button  
+              color="primary" 
+              class="btnPrev" 
+              (click)="prev()">Prev</button>
+          </div>
+          <div class="right">
+          <button 
+          id= {{title}} 
+          type="submit" 
+          float-right ion-button color="primary"
+           class="btnNext" 
+           (click)="nextP()">Next</button>
+          </div>
+          </div>
+        </ion-slide>
+
+        <ion-slide style="background-color: #F07243;">
+          <div class="slide">
+            <div class="cont">
+              <h1 >DEFENSA HITO4</h1>
+              <p>ESTU: SANDRA MALDONADO</p>
+              <p>GESTION 2020</p>
+            
+            </div>
+            <div class="left2">
+              <button 
+              id= {{title}} 
+              type="submit" 
+              float-left ion-button  
+              color="primary" 
+              class="btnPrev" 
+              (click)="prev()">Prev</button>
+          </div>
+          <div class="right2">
+          <button 
+          id= {{title}} 
+          type="submit" 
+          float-right ion-button color="primary"
+           class="btnNext" 
+           (click)="nextP()">Next</button>
+          </div>
+          </div>
+        </ion-slide>
+
+      </ion-slides>
+    </ion-content>
+  </ion-app>
+
+  
+</body>
+

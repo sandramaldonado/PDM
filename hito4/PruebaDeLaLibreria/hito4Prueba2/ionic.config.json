@@ -1,0 +1,7 @@
+{
+  "name": "hito4Prueba2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
