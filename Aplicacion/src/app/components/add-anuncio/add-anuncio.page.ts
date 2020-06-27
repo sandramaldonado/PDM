@@ -12,7 +12,7 @@ import { Anuncio } from '../../Modelos/Anuncio';
   styleUrls: ['./add-anuncio.page.scss'],
 })
 export class AddAnuncioPage implements OnInit {
-
+  llave = 0;
   constructor(public anuncioService : AnuncioService) { }
 
   ngOnInit() {
@@ -22,10 +22,8 @@ export class AddAnuncioPage implements OnInit {
 
   onSubmit(productForm: NgForm)
   {
-    if(productForm.value.$key == null)
-      this.anuncioService.insertAnuncio(productForm.value);
-    else
-    this.anuncioService.updateAnuncio(productForm.value);
+    this.llave = this.llave + 1;
+    this.anuncioService.createAnuncio(productForm.value);
     
     this.resetForm(productForm);
   }

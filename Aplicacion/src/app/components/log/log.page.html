@@ -7,16 +7,16 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <img src="https://www.solofondos.com/wp-content/uploads/2017/09/fondos-de-pantalla-hd-para-android-con-movimiento.jpg" style="position: absolute; z-index: 1;">
+  <img src="https://i.pinimg.com/originals/01/70/2e/01702e340f1db51d6d19020086a82303.jpg" style="position: absolute; z-index: 1; ">
   <form  style="position: absolute; z-index: 1;">
     <ion-grid>
       <ion-row color="primary" justify-content-center>
         <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
           <div text-center>
-            <img class= "logo" src="https://i.pinimg.com/originals/8d/00/78/8d007895d21f202a7e0e76a2d55275a4.png">
           </div>
           <div padding class="username">
             <ion-item >
+              
               <ion-input   name="username"
                [(ngModel)]= "username"
                   type="email"
@@ -35,7 +35,7 @@
           </div>
           <div padding class="boton" >
             <ion-button  size="medium" (click)="tryLogin()"  expand="block" >Log In</ion-button>
-            <ion-button  size="medium" type="submit" expand="block" >Registrarse</ion-button>
+            <ion-button  size="medium"  type="submit" expand="block" (click)="registrarse()" >Registrarse</ion-button>
           </div>
         </ion-col>
       </ion-row>

@@ -18,14 +18,18 @@ export class ClasificadosPage implements OnInit {
   constructor(private anuncioService: AnuncioService) { }
 
   ngOnInit() {
-    return this.anuncioService.getAnuncios().snapshotChanges().subscribe(item => {
-      this.anuncioList = [];
-      item.forEach(element => {
-        let x = element.payload.toJSON();
-        x["$key"] = element.key;
-        this.anuncioList.push(x as Anuncio);
-      });
-    });
+    this.anuncioService.getAnuncios().subscribe(data => {
+      this.anuncioList = data.map(e => {
+        return {
+          imagen: e.payload.doc.data()['imagen'],
+          titulo: e.payload.doc.data()['titulo'],
+          categoria: e.payload.doc.data()['categoria'],
+          descripcion: e.payload.doc.data()['descripcion'],
+          telefono: e.payload.doc.data()['telefono']
+
+        } as Anuncio;
+      })
+    })
 
     
 }

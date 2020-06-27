@@ -15,7 +15,16 @@
         <form #productForm="ngForm" (ngSubmit)="onSubmit(productForm)">
             <!-- TO UPDATE -->
             <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="anuncioService.selectedAnuncio.$key">
-            
+            <div class="form-group">
+              <input 
+                type="hidden"
+                class="form-control"
+                name="$key"
+                #key="ngModel"
+                [(ngModel)]="llave"
+                value="{{llave}}"
+                >
+            </div>  
             <div class="form-group">
               <ion-label position="floating">Agregar una Imagen:</ion-label>
               <ion-input 

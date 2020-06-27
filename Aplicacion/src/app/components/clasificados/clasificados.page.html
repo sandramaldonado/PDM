@@ -27,9 +27,15 @@
         <ion-card-title>{{anuncio.titulo}}</ion-card-title>
       </ion-card-header>
       <ion-card-content>
+        <label>Descripcion:</label>
+        <br>
         {{anuncio.descripcion}}
+        <br>
+        <label>Numero de Referencia:</label>
+        <br>
+        {{anuncio.telefono}}
       </ion-card-content>
-      <ion-button size="small" (click)="onRead(anuncio)">Leer Mas</ion-button>
+      <!-- <ion-button size="small" (click)="onRead(anuncio)">Leer Mas</ion-button> -->
     </ion-card>
   </div>
   

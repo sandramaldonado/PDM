@@ -4,11 +4,19 @@
       <ion-slides #slides >
 
         <ion-slide style="background-color: #4DCA77;" >
-          <div class="slide">
-            <app-pdm style="position: absolute; z-index: 1;"></app-pdm>
-            <app-buttons class="botones"title="pdm" style="position: absolute; z-index: 2;"></app-buttons>
-          </div>
-          
+          <label>MY APP</label>
+         
+
+                    <ion-input
+                    name="nombre"
+                      [(ngModel)]= "datos.nameApp"
+                        type="text"
+                         placeholder="my app" ></ion-input>
+
+
+                
+
+          <ion-button  size="medium" (click)="subir()"  expand="block" >Registrar App</ion-button>
         </ion-slide>
 
         <ion-slide style="background-color: #F07243;" >

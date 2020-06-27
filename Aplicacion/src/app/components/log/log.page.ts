@@ -47,31 +47,11 @@ export class LogPage implements OnInit {
         
     );
 
+  }
 
-
-
-
-
-
-
-   /* 
-      if(this.username == "usuario@gmail.com")
-      {
-      this.CurrentUser = "publico";
-      console.log(this.CurrentUser); 
-      this.tipousuario.TipoUsuario(this.CurrentUser);  
-      this.router.navigate(['/home'])
-      }
-      else if(this.username == "admin@gmail.com")
-      {
-        this.CurrentUser = "admin";
-        console.log(this.CurrentUser);
-        this.tipousuario.TipoUsuario(this.CurrentUser);
-        this.router.navigate(['/home'])
-        
-      } */
-  
-
+  registrarse()
+  {
+    this.router.navigate(['/registrarse']);
   }
 
 }
