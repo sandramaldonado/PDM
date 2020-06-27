@@ -37,7 +37,7 @@ En un Navegador ir a la direccion: http://localhost:8100/
 # RELEASE HISTORY
 Primer Lanzamiento de la aplicacion Will Project
 # MANUAL DE USUARIO
-(https://github.com/sandramaldonado/PDM/files/4839922/Will.Proyect.Manual.de.Usuario.pdf)
+(https://github.com/sandramaldonado/PDM/files/4839933/Will.Proyect.Manual.de.Usuario.pdf)
 # META
 Sandra Maldonado\
 Gmail: -sandra13lovesyou@gmail.com\
